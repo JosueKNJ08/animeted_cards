@@ -1,0 +1,53 @@
+*, *::before, *::after{
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --color-one: hsl(192, 95%, 50%);
+    --color-two: hsl(191, 100%, 98%);
+}
+
+.card-main{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px 0 black;
+
+}
+.card-footer{
+    margin-top: 25px;
+}
+
+.card-footer .blue{
+    border: none;
+    padding: 20px;
+    margin-right: 5px;
+    border-radius: 15px;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    cursor: pointer;
+    box-shadow: 0 0 0 1px var(--color-two);
+}
+.card-footer .blue:hover{
+    background-color: var(--color-two);
+    color: var(--color-one);
+    box-shadow: 0 0 0 1px var(--color-one);
+    transition: ease-out .3s;
+}
+.card-footer .white{
+    border: none;
+    padding: 20px;
+    margin-right: 5px;
+    border-radius: 15px;
+    background-color: var(--color-two);
+    color: var(--color-one);
+    cursor: pointer;
+    box-shadow: 0 0 0 1px var(--color-one);
+}
+.card-footer .white:hover{
+    background-color: var(--color-one);
+    color: var(--color-two);
+    box-shadow: 0 0 0 1px var(--color-two);
+    transition: ease-out .3s;
+}
