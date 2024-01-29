@@ -8,15 +8,35 @@
     --color-two: hsl(191, 100%, 98%);
 }
 
-.card-main{
-    padding: 10px;
+.card-main1{
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 5px 7px 0 black;
+    width: 50%;
 
 }
+.card-main1:hover{
+    transform: scale(1.01);
+    box-shadow: 0 5px 10px 0 pink;
+    transition: ease-out .3s;
+
+}
+.card-header img{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.card-body, .card-footer{
+    padding: 10px;
+    font-size: 1rem;
+}
 .card-footer{
-    margin-top: 25px;
+    margin-top: 0px;
 }
 
 .card-footer .blue{
@@ -50,4 +70,10 @@
     color: var(--color-two);
     box-shadow: 0 0 0 1px var(--color-two);
     transition: ease-out .3s;
+}
+@media (max-width: 800px) {
+    
+    .card-main1{
+        width: 100%;
+    }
 }
